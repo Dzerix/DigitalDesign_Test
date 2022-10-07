@@ -92,6 +92,15 @@ namespace DigitalDesign_Test
                 var x = random.Next(0, viewModel.N);
                 Dispatcher.Invoke(() => MoveLever(gridMain.Children.Cast<Button>().First(e => Grid.GetRow(e) == x && Grid.GetColumn(e) == x)), DispatcherPriority.Render);
             }
+            var FirstNumber = viewModel.HandleArray[0, 0];
+            foreach (var Number in viewModel.HandleArray)
+            {
+                if (Number != FirstNumber)
+                {
+                    return;
+                }
+            }
+            ConfuseTheField(complexity);
         }
 
         private void StartGameButton_Click(object sender, RoutedEventArgs e)
