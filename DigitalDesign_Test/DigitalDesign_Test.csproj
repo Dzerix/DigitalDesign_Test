@@ -5,11 +5,16 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\free-icon-safe-box-2676632-_1_.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Assets\valve.png" />
     <None Remove="Assets\valve_horizontal.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\free-icon-safe-box-2676632-_1_.ico" />
   </ItemGroup>
 
   <ItemGroup>
